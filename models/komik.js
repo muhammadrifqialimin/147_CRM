@@ -4,8 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     {
       id: {
         type: DataTypes.INTEGER,
-        primarykey: true,
-        autoincrement: true,
+        primaryKey: true,
+        autoIncrement: true,
       },
       judul: {
         type: DataTypes.STRING,
@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       tableName: "komik",
       freezeTableName: true,
-      timestamps: true,
+      timestamps: false,
     }
   );
   return komik;

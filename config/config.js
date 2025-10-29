@@ -1,34 +1,30 @@
 require("dotenv").config();
 
 const development = {
-  username: Process.env.DB_USERNAME,
-  password: Process.env.DB_PASS,
-  database: Process.env.DB_DATABASE,
-  host: Process.env.DB_HOST,
-  port: Process.env.DB_PORT,
-  port: Process.env.DB_DIALECT,
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASS,
+  database: process.env.DB_DATABASE,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  dialect: process.env.DB_DIALECT,
 };
 
 const test = {
-  username: Process.env.DB_USERNAME,
-  password: Process.env.DB_PASS,
-  database: Process.env.DB_DATABASE,
-  host: Process.env.DB_HOST,
-  port: Process.env.DB_PORT,
-  port: Process.env.DB_DIALECT,
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASS,
+  database: process.env.DB_DATABASE,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  dialect: process.env.DB_DIALECT,
 };
 
 const production = {
-  username: Process.env.DB_USERNAME,
-  password: Process.env.DB_PASS,
-  database: Process.env.DB_DATABASE,
-  host: Process.env.DB_HOST,
-  port: Process.env.DB_PORT,
-  port: Process.env.DB_DIALECT,
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASS,
+  database: process.env.DB_DATABASE,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  dialect: process.env.DB_DIALECT,
 };
 
-module.exports = {
-  development,
-  test,
-  production,
-};
+module.exports = { development, test, production };
